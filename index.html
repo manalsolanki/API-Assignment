@@ -17,47 +17,17 @@
 
   <head>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCZX183s5aO_GDv_mZ2TL9M4U5Pjg7Cs4g"></script>
-    <script type="text/javascript">
-    //   var origin = new google.maps.LatLng(40.689844, -74.044874),
-    var origin = "65 Alhart Drive",
-        destination = "6 Spring Valley",
-        service = new google.maps.DistanceMatrixService();
-
-      service.getDistanceMatrix({
-          origins: [origin],
-          destinations: [destination],
-          travelMode: google.maps.TravelMode.DRIVING,
-          avoidHighways: false,
-          avoidTolls: false
-        },
-        callback
-      );
-
-      function callback(response, status) {
-        var orig = document.getElementById("orig"),
-          dest = document.getElementById("dest"),
-          dist = document.getElementById("dist");
-            console.log(response);
-        if (status == "OK") {
-            console.log(response);
-          orig.value = response.destinationAddresses[0];
-          dest.value = response.originAddresses[0];
-          dist.value = response.rows[0].elements[0].distance.text;
-          console.log(response.rows[0].elements[0].duration.text)
-        } else {
-          alert("Error: " + status);
-        }
-      }
-
-    </script>
+   
   </head>
-
+§
   <body>
     <br>
     Basic example for using the Distance Matrix.<br><br>
     Origin: <input id="orig" type="text" style="width:35em"><br><br>
     Destination: <input id="dest" type="text" style="width:35em"><br><br>
-    Distance from Statue of Liberty to Washington DC, USA (by car): <input id="dist" type="text" style="width:35em">
+    Distance  <input id="dist" type="text" style="width:35em">
 
   </body>
+  <script type="text/javascript" src="./main.js"></script>
+
 </html>
