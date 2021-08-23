@@ -1,0 +1,39 @@
+body{
+    background-color: blueviolet;
+    background-image: url(../image/backgroundImage.png);
+    font-family: 'Varela Round', sans-serif;
+}
+header, h1{
+    text-align: center;
+    
+}
+input{
+    padding:0.5em;
+    width:80%;
+    border-radius: 5px;
+    border:black solid 1px;
+    font-size: 15px;
+
+}
+.form{
+    max-width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    border:black solid 1px;
+    border-radius: 5px;
+    padding:1em;
+    
+}
+
+label{
+    display: block;
+    margin-bottom: 0.25em;
+}
+.form-elements{
+    margin-bottom: 1em;
+}
+input[type="submit"]
+{
+    background-color: chartreuse;
+    font-size: 1em;
+}
