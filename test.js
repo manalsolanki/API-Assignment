@@ -37,11 +37,8 @@ function getDistance(event) {
       dist.innerHTML = "Estimated time to travel " + response.rows[0].elements[0].distance.text + " is " + response.rows[0].elements[0].duration.text;
       youtubediv.classList.remove("hidden");
       youtubediv.classList.add("show");
-      var youtubeForm = document.getElementById('youtubeForm');
 
-      // For calling youtube
-      youtubeForm.onclick = getVideo;
-      // console.log(response.rows[0].elements[0].distance.text)
+    
     } else {
       alert("Error: " + status);
     }
@@ -49,9 +46,7 @@ function getDistance(event) {
 
 }
 
-function getVideo(event) {
-  console.log("Inside the youtube block");
-}
+
 
 
 
