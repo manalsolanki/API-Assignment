@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- <script type="text/javascript"
-    src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCZX183s5aO_GDv_mZ2TL9M4U5Pjg7Cs4g"></script> -->
+  <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCZX183s5aO_GDv_mZ2TL9M4U5Pjg7Cs4g"></script>
   <script src="https://apis.google.com/js/api.js"></script>
-  <script>
+  <!-- <script>
     /**
      * Sample JavaScript code for youtube.search.list
      * See instructions for running APIs Explorer code samples locally:
@@ -66,7 +66,7 @@
       document.getElementById("myFrame").src=`https://www.youtube.com/embed/${videoId}`;
      
     }
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -91,23 +91,26 @@
         
       </div>
     </form>
-    <div id="youtubeDiv">
+    <div id="youtubeDiv" class="hidden">
       <h3>Want to listen to music too, while traveling? </h3>
       <p>Please Login In Successfully to Google account.</p> 
-      <button id="youtubeForm" onclick="authenticate().then(loadClient)">Login</button>
+      <!-- <button id="youtubeForm" onclick="authenticate().then(loadClient)">Login</button> -->
+            <button id="youtubeForm" >Login</button>
+
       <p>If logged in Successfully , enjoy song.</p> 
-      <button id="youtubeForm" onclick="execute()">Login</button>
+      <button id="playSong" >Song</button>
       <!-- <form >
         <input type="submit" id="playVideo" value="Play Video">
       </form> -->
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" id="myFrame">
+      <iframe class="hidden" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" id="myFrame">
       </iframe>
     </div>
     <div>
 
     </div>
   </div>
-  <!-- <script type="text/javascript" src="test.js"></script> -->
+  <script type="text/javascript" src="youtube.js"></script>
+  <script type="text/javascript" src="test.js"></script>
 </body>
 
 </html>
