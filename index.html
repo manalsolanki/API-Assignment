@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCZX183s5aO_GDv_mZ2TL9M4U5Pjg7Cs4g"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCZX183s5aO_GDv_mZ2TL9M4U5Pjg7Cs4g"></script>
 </head>
+
 <body>
-    <header>
-      <h1>🎼 Beats On Travel 🚘</h1>
-    </header>
-    <div class="form">
-      <form id="form">
-        <div class="form-elements">
-          <label for="start">Starting Location.(Please enter full address.) :</label>
-          <input type = "text" id="start" name="start" placeholder="65,Alhart Drive , Etobicoke"/>
+  <header>
+    <h1>🚘 Beats On Travel 🎼 </h1>
+  </header>
+  <div class="form">
+    <form id="form">
+      <div class="form-elements">
+        <label for="start">Starting Location.(Please enter full address.) :</label>
+        <input type="text" id="start" name="start" placeholder="65,Alhart Drive , Etobicoke" />
+      </div>
+      <div class="form-elements">
+        <label for="end">End Location.(Please enter full address.) :</label>
+        <input type="text" id="end" name="end" placeholder="6 Spring Valley Crt, Brampton" />
+      </div>
+      <div class="form-elements">
+        <input type="submit" name="submit" id="submit" value="Submit">
+      </div>
+      <div class="form-elements">
+        <h3 id="dist"></h3>
+        <div  id="youtubeDiv" class="hidden">
+          <h3>Want to listen to music too, while traveling? </h3>
+          <button id="youtubeForm">Play Video</button>
+          <!-- <form >
+            <input type="submit" id="playVideo" value="Play Video">
+          </form> -->
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
         </div>
-        <div class="form-elements">
-          <label for="end">End Location.(Please enter full address.) :</label>
-          <input type = "text" id="end" name="end" placeholder="6 Spring Valley Crt, Brampton"/>  
-        </div>
-        <div class="form-elements">
-          <input type="submit" name="submit" id="submit" value="Submit">
-        </div>
-        <div class="form-elements">
-            <h3 id="dist"></h3>
-        </div>
-      </form>
+      </div>
+    </form>
+    <div>
+      
     </div>
-    <script type="text/javascript" src="test.js"></script>
+  </div>
+  <script type="text/javascript" src="test.js"></script>
 </body>
+
 </html>
-
-

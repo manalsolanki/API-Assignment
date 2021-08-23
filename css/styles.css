@@ -37,3 +37,27 @@ input[type="submit"]
     background-color: chartreuse;
     font-size: 1em;
 }
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+#youtubeDiv{
+    text-align: center;
+    font-size: 1.75em;
+}
+#youtubeForm{
+    background-color: brown;
+    width: fit-content;
+    align-items: center;
+    border:1px solid brown;
+    cursor: -webkit-grab; cursor: grab;
+    padding:0.5em;
+    font-size: 0.75em;
+    border-radius: 5px;
+}
+iframe{
+    margin-top:1em;
+}

@@ -8,7 +8,7 @@
        * See instructions for running APIs Explorer code samples locally:
        * https://developers.google.com/explorer-help/guides/code_samples#javascript
        */
-    
+      var serachResult ;
       function authenticate() {
         return gapi.auth2.getAuthInstance()
             .signIn({scope: "https://www.googleapis.com/auth/youtube.force-ssl"})
@@ -38,14 +38,24 @@
             .then(function(response) {
               var result = response;
                     // Handle the results here (response.result has the parsed body).
-                    console.log("Response", result.result);
+                    // console.log("Response", result.result.items[0]);
+                    finalResult(result);
                   },
                   function(err) { console.error("Execute error", err); });
       }
       gapi.load("client:auth2", function() {
         gapi.auth2.init({client_id: "488631584359-7cfqd4e95b8da4ji50028ftvd3jr24nf.apps.googleusercontent.com"});
       });
-    </script>    
+      function finalResult(result)
+      {
+        searchResult = result;
+        console.log(searchResult);
+        items = searchResult.result.items
+         items.forEach(element => {
+           console.log("Item 1" + element)
+         });
+      }
+          </script>    
   </head>
   <body>
     <button onclick="authenticate().then(loadClient)">authorize and load</button>
