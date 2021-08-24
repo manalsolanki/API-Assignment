@@ -1,15 +1,22 @@
-https://developers.google.com/youtube/v3/getting-started
+# API used
 
-https://www.youtube.com/watch?v=rzk8n-4gMWs
+# Google Distance Matrix 
 
-https://developers.google.com/youtube/v3/docs/search/list?apix=true#type
+# Youtube API
 
-https://developers.google.com/youtube/v3/docs/search/list?apix=true#type
+## Tasks
 
-https://developers.google.com/explorer-help/guides/code_samples#javascript
+- please fill the address with city.
+- So distance and time taken between two city will be displayed.
+- For youtube Api to work we need to login into to Google. (I have added email : joanna.kommala@humber.ca ) but I think we need to click on advance and it works.
+- When login click on song button a youtube song is displayed
+- Run on localhost (because that url is specified.)
 
+## Known Errors
 
-# Youtube APi
+- It is not working according the time.
+- Wasnt able to transfer one data from js file to another file.
 
-- Working on it , I am getting the results just tweeting it and have display on HTML .Probably by end of day it will done. 
-- Thanks for consideration.
+## Future Enhancement
+- According to the duration we can show.
+- Auto complete of address.
