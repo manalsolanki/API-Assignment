@@ -48,16 +48,39 @@ input[type="submit"]
     text-align: center;
     font-size: 1.75em;
 }
-#youtubeForm{
-    background-color: brown;
-    width: fit-content;
+#youtubeDiv p{
+    font-size:0.5em;
+}
+.flex{
+    display: flex;
     align-items: center;
-    border:1px solid brown;
-    cursor: -webkit-grab; cursor: grab;
-    padding:0.5em;
-    font-size: 0.75em;
+}
+#youtubeForm{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    /* align-items: center; */
+    border: 1px solid blue;
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 0.5em;
+    padding-top: 0px;
     border-radius: 5px;
+    padding-bottom: 0px;
 }
 iframe{
     margin-top:1em;
+}
+#playSong{
+    background-color: brown;
+    width: 100px;
+    height: 30px;
+    /* align-items: center; */
+    border: 1px solid brown;
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 0.5em;
+    padding-top: 0px;
+    border-radius: 5px;
+    padding-bottom: 0px;
 }

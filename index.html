@@ -91,14 +91,18 @@
         
       </div>
     </form>
-    <div id="youtubeDiv" class="hidden">
+    <div id="youtubeDiv" >
       <h3>Want to listen to music too, while traveling? </h3>
-      <p>Please Login In Successfully to Google account.</p> 
-      <!-- <button id="youtubeForm" onclick="authenticate().then(loadClient)">Login</button> -->
-            <button id="youtubeForm" >Login</button>
+      <div class="flex">
+        <p>Please Login In Successfully to Google account.</p> 
+        <button id="youtubeForm" >Login</button>
+      </div>
+      <div class="flex">
+        <p>If logged in Successfully , enjoy song.</p> 
+        <button id="playSong" >Song</button>
+      </div>
 
-      <p>If logged in Successfully , enjoy song.</p> 
-      <button id="playSong" >Song</button>
+  
       <!-- <form >
         <input type="submit" id="playVideo" value="Play Video">
       </form> -->
