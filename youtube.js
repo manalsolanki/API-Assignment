@@ -1,7 +1,7 @@
 
 var youtubeForm = document.getElementById('youtubeForm');
 var flag = 0;
-var videoDuration
+var videoDuration = "any";
 // youtubeForm.onclick = ()=>{
 //     console.log(videoDuration);
 //     videoDuration = document.getElementById("time");
@@ -40,7 +40,7 @@ function execute() {
         ],
         "location": "21.5922529,-158.1147114",
         "locationRadius": "10mi",
-        "q": "surfing",
+        "q": "soothing music",
         "type": [
             "video"
         ],
@@ -60,7 +60,11 @@ gapi.load("client:auth2", function () {
 
 function finalResult(result) {
     searchResult = result;
-    let videoId = searchResult.result.items[0].id.videoId;
+    const min = 0;
+    const max = 5;
+    const intNumber = Math.floor(Math.random() * (max - min)) + min;
+    // console.log(intNumber);
+    let videoId = searchResult.result.items[intNumber].id.videoId;
     let iframe = document.getElementById("myFrame");
     iframe.classList.remove("hidden");
     iframe.classList.add("show");
